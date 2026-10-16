@@ -1,0 +1,194 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/linear21"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="16dp"
+	android:layout_marginHorizontal="16dp"
+	android:orientation="vertical"
+	android:padding="12dp"
+	android:background="@drawable/bg_cycle_outer"
+	android:elevation="4dp"
+	android:clipChildren="false"
+	android:clipToPadding="false"
+	android:id="@+id/_main">
+	<LinearLayout
+		android:id="@+id/linear20"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="20dp"
+		android:background="@drawable/bg_cycle_card"
+		android:orientation="vertical"
+		android:elevation="2dp"
+		android:clipChildren="false"
+		android:clipToPadding="false">
+		<TextView
+			android:id="@+id/textview7"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="🗓Cycle Calculator"
+			android:textSize="23sp"
+			android:textStyle="bold"
+			android:textColor="#702641" />
+		<TextView
+			android:id="@+id/textview8"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="6dp"
+			android:layout_marginBottom="24dp"
+			android:text="Enter your latest period details to estimate your cycle."
+			android:textSize="14sp"
+			android:textColor="#896D78"
+			android:lineSpacingExtra="3dp" />
+		<TextView
+			android:id="@+id/textview13"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:text="Last period start date"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:textColor="#702641" />
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/textinputlayout1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="18dp"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+			app:boxBackgroundColor="#FFFBFC"
+			app:boxCornerRadiusTopStart="14dp"
+			app:boxCornerRadiusTopEnd="14dp"
+			app:boxCornerRadiusBottomStart="14dp"
+			app:boxCornerRadiusBottomEnd="14dp"
+			app:boxStrokeColor="#C04473"
+			app:startIconDrawable="@android:drawable/ic_menu_my_calendar"
+			app:startIconTint="#C04473">
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/edittext1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="14dp"
+				android:textSize="15sp"
+				android:textColor="#702641"
+				android:inputType="none"
+				android:minHeight="56dp"
+				android:focusable="false" />
+		</com.google.android.material.textfield.TextInputLayout>
+		<TextView
+			android:id="@+id/textview14"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:text="Period duration"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:textColor="#702641" />
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/textinputlayout2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="18dp"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+			app:boxBackgroundColor="#FFFBFC"
+			app:boxCornerRadiusTopStart="14dp"
+			app:boxCornerRadiusTopEnd="14dp"
+			app:boxCornerRadiusBottomStart="14dp"
+			app:boxCornerRadiusBottomEnd="14dp"
+			app:boxStrokeColor="#C04473"
+			app:suffixText="days"
+			app:suffixTextColor="#896D78"
+			app:startIconDrawable="@android:drawable/ic_menu_recent_history"
+			app:startIconTint="#C04473">
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/edittext2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="14dp"
+				android:textSize="15sp"
+				android:textColor="#702641"
+				android:inputType="number"
+				android:minHeight="56dp"
+				android:maxLength="2" />
+		</com.google.android.material.textfield.TextInputLayout>
+		<TextView
+			android:id="@+id/textview15"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:text="Average cycle length"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:textColor="#702641" />
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/textinputlayout3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="24dp"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+			app:boxBackgroundColor="#FFFBFC"
+			app:boxCornerRadiusTopStart="14dp"
+			app:boxCornerRadiusTopEnd="14dp"
+			app:boxCornerRadiusBottomStart="14dp"
+			app:boxCornerRadiusBottomEnd="14dp"
+			app:boxStrokeColor="#C04473"
+			app:suffixText="days"
+			app:suffixTextColor="#896D78"
+			app:startIconDrawable="@android:drawable/ic_menu_rotate"
+			app:startIconTint="#C04473">
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/edittext3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="14dp"
+				android:textSize="15sp"
+				android:textColor="#702641"
+				android:inputType="number"
+				android:minHeight="56dp"
+				android:maxLength="2" />
+		</com.google.android.material.textfield.TextInputLayout>
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/btn_calculate"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="Calculate My Cycle"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:textAllCaps="false"
+			android:insetTop="0dp"
+			android:insetBottom="0dp"
+			app:cornerRadius="16dp"
+			app:backgroundTint="#B83264"
+			app:icon="@android:drawable/ic_menu_today"
+			app:iconTint="#FFFFFF"
+			app:iconGravity="textStart"
+			app:iconPadding="10dp" />
+		<TextView
+			android:id="@+id/textview16"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="♥  Your cycle is unique to you"
+			android:textSize="12sp"
+			android:textColor="#987D87" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear21"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:orientation="vertical"
+		android:layout_weight="1">
+		<TextView
+			android:id="@+id/textview17"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="TextView"
+			android:textSize="12sp" />
+	</LinearLayout>
+</LinearLayout>
